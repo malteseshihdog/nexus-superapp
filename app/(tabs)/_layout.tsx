@@ -1,36 +1,11 @@
-import { isLiquidGlassAvailable } from "expo-glass-effect";
 import { Tabs } from "expo-router";
-import { NativeTabs, Icon, Label } from "expo-router/unstable-native-tabs";
 import { BlurView } from "expo-blur";
 import { Platform, StyleSheet, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import React from "react";
 import { COLORS } from "@/constants/colors";
 
-function NativeTabLayout() {
-  return (
-    <NativeTabs>
-      <NativeTabs.Trigger name="index">
-        <Icon sf={{ default: "bubble.left", selected: "bubble.left.fill" }} />
-        <Label>Chat</Label>
-      </NativeTabs.Trigger>
-      <NativeTabs.Trigger name="feed">
-        <Icon sf={{ default: "text.bubble", selected: "text.bubble.fill" }} />
-        <Label>PEEP</Label>
-      </NativeTabs.Trigger>
-      <NativeTabs.Trigger name="market">
-        <Icon sf={{ default: "bag", selected: "bag.fill" }} />
-        <Label>Market</Label>
-      </NativeTabs.Trigger>
-      <NativeTabs.Trigger name="wallet">
-        <Icon sf={{ default: "wallet.pass", selected: "wallet.pass.fill" }} />
-        <Label>Wallet</Label>
-      </NativeTabs.Trigger>
-    </NativeTabs>
-  );
-}
-
-function ClassicTabLayout() {
+export default function TabLayout() {
   const isIOS = Platform.OS === "ios";
   const isWeb = Platform.OS === "web";
 
@@ -121,11 +96,4 @@ function ClassicTabLayout() {
       />
     </Tabs>
   );
-}
-
-export default function TabLayout() {
-  if (isLiquidGlassAvailable()) {
-    return <NativeTabLayout />;
-  }
-  return <ClassicTabLayout />;
 }
