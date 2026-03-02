@@ -1,0 +1,84 @@
+{
+  "expo": {
+    "name": "NEXUS",
+    "slug": "nexus-superapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "nexus",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#111111"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.nexus.superapp",
+      "infoPlist": {
+        "NSCameraUsageDescription": "NEXUS يحتاج الكاميرا لمكالمات الفيديو والبث المباشر",
+        "NSMicrophoneUsageDescription": "NEXUS يحتاج الميكروفون للمكالمات الصوتية",
+        "NSContactsUsageDescription": "NEXUS يحتاج جهات الاتصال لمزامنة قائمة المحادثات",
+        "NSPhotoLibraryUsageDescription": "NEXUS يحتاج مكتبة الصور لمشاركة الصور"
+      }
+    },
+    "android": {
+      "package": "com.nexus.superapp",
+      "versionCode": 2,
+      "minSdkVersion": 28,
+      "targetSdkVersion": 34,
+      "compileSdkVersion": 34,
+      "adaptiveIcon": {
+        "backgroundColor": "#111111",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_CONTACTS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.VIBRATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "NEXUS يحتاج الكاميرا للبث المباشر ومكالمات الفيديو"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {
+        "origin": "https://replit.com/"
+      },
+      "eas": {
+        "projectId": "bc00ea03-9480-4744-8a11-1bbb447825db"
+      }
+    },
+    "owner": "mustibook"
+  }
+}
