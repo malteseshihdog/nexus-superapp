@@ -1,0 +1,40 @@
+{
+  "name": "nexus-git-tool",
+  "displayName": "Git Integration Tool",
+  "version": "1.0.0",
+  "description": "Enhanced Git integration tool for Nexus Cloud IDE",
+  "publisher": "nexus-examples",
+  "categories": ["tool"],
+  "keywords": ["git", "version-control"],
+  "main": "./src/extension.ts",
+  "contributes": {
+    "commands": [
+      {
+        "command": "git.commitAll",
+        "title": "Commit All Changes",
+        "category": "Git"
+      },
+      {
+        "command": "git.viewHistory",
+        "title": "View Commit History",
+        "category": "Git"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "git.commitAll",
+          "group": "git@1",
+          "when": "editorIsOpen"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "git.commitAll",
+        "key": "ctrl+shift+g",
+        "mac": "cmd+shift+g"
+      }
+    ]
+  }
+}

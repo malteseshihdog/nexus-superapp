@@ -1,0 +1,18 @@
+{
+  "name": "@nexus/version-control",
+  "version": "1.0.0",
+  "description": "Version control integration for Nexus Cloud IDE Platform",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "@octokit/rest": "^22.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+export { DebuggerManager } from './debugger/debuggerManager';
+export { BreakpointManager } from './debugger/breakpointManager';
+export { VariableInspector } from './debugger/variableInspector';
+export { CallStack } from './debugger/callStack';
+export { WatchExpressions } from './debugger/watchExpressions';
+export { CpuProfiler } from './profiling/cpuProfiler';
+export { MemoryProfiler } from './profiling/memoryProfiler';
+export { FlameGraph } from './profiling/flameGraph';
+export { RequestCapture } from './networkInspector/requestCapture';
+export { ResponseAnalysis } from './networkInspector/responseAnalysis';
+
+export type { DebugSession, DebugConfig, DebugState } from './debugger/debuggerManager';
+export type { Breakpoint, BreakpointType } from './debugger/breakpointManager';
+export type { Variable, Scope, VariableKind } from './debugger/variableInspector';
+export type { StackFrame, Thread } from './debugger/callStack';
+export type { WatchExpression } from './debugger/watchExpressions';
+export type { CpuProfile, ProfileNode } from './profiling/cpuProfiler';
+export type { MemorySnapshot, MemoryObject, MemoryLeak } from './profiling/memoryProfiler';
+export type { FlameNode } from './profiling/flameGraph';
+export type { CapturedRequest } from './networkInspector/requestCapture';
+export type { CapturedResponse, NetworkEvent } from './networkInspector/responseAnalysis';

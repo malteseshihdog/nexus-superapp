@@ -1,0 +1,19 @@
+{
+  "name": "nexus-rust-language",
+  "displayName": "Rust Language Support",
+  "version": "1.0.0",
+  "description": "Rust language support for Nexus Cloud IDE",
+  "publisher": "nexus-examples",
+  "categories": ["language"],
+  "keywords": ["rust", "language"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "rust",
+        "aliases": ["Rust", "rust"],
+        "extensions": [".rs"],
+        "configuration": "./language-configuration.json"
+      }
+    ]
+  }
+}
