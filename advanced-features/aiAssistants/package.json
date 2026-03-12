@@ -1,0 +1,19 @@
+{
+  "name": "@nexus/ai-assistants",
+  "version": "1.0.0",
+  "description": "AI assistants for Nexus Cloud IDE Platform",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "openai": "^4.0.0",
+    "@anthropic-ai/sdk": "^0.30.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

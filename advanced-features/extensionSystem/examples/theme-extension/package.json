@@ -1,0 +1,19 @@
+{
+  "name": "nexus-dracula-theme",
+  "displayName": "Dracula Theme",
+  "version": "1.0.0",
+  "description": "A dark theme for Nexus Cloud IDE",
+  "publisher": "nexus-examples",
+  "categories": ["theme"],
+  "keywords": ["dark", "dracula", "theme"],
+  "contributes": {
+    "themes": [
+      {
+        "id": "dracula",
+        "label": "Dracula",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dracula.json"
+      }
+    ]
+  }
+}
