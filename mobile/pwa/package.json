@@ -1,0 +1,14 @@
+{
+  "name": "@nexus/mobile-pwa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PWA service worker, offline manager, and push notification support for NEXUS IDE",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "lint": "eslint src --ext .ts"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.2"
+  }
+}
